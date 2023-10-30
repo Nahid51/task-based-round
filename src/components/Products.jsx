@@ -1,8 +1,9 @@
+import "../styles/product.scss";
 
 const Products = () => {
     return (
-        <div id="products" style={{ height: "100vh" }}>Products</div>
+        <div id="products" className="productBg">Products</div>
     )
 }
 
-export default Products
+export default Products;

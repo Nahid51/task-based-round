@@ -1,9 +1,9 @@
-
+import "../styles/team.scss";
 
 const MeetTheTeam = () => {
     return (
-        <div id="team" style={{ height: "100vh" }}>MeetTheTeam</div>
+        <div id="team" className="teamBg">MeetTheTeam</div>
     )
 }
 
-export default MeetTheTeam
+export default MeetTheTeam;

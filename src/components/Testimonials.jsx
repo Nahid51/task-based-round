@@ -1,7 +1,8 @@
+import "../styles/testimonial.scss";
 
 const Testimonials = () => {
     return (
-        <div id="testimonials" style={{ height: "100vh" }}>Testimonials</div>
+        <div id="testimonials" className="testimonialBg">Testimonials</div>
     )
 }
 

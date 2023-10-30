@@ -1,8 +1,8 @@
-
+import "../styles/client.scss";
 
 const Clients = () => {
     return (
-        <div id="clients" style={{ height: "100vh" }}>Clients</div>
+        <div id="clients" className="clientBg">Clients</div>
     )
 };
 
