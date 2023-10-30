@@ -1,8 +1,9 @@
+import "../styles/about.scss";
 
 const About = () => {
     return (
-        <div>About</div>
+        <div className="aboutBg">About</div>
     )
 }
 
-export default About
+export default About;

@@ -1,0 +1,136 @@
+.headerBg {
+    background-color: aliceblue;
+    box-shadow: 0px 0px 20px 5px lightblue;
+    padding: 1.5rem 0;
+
+    .headerContainer {
+        padding: 0 5rem;
+
+        .headerDisplay {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .headBar {
+
+                .toggleMenu {
+                    display: none;
+                }
+            }
+
+            .mobileNav {
+                display: none;
+                position: absolute;
+                width: 100vw;
+            }
+        }
+    }
+}
+
+.navbarLink {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .navLink {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+.is-sticky {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 999;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width: 1080px) {
+    .headerBg {
+
+        .headerContainer {
+            padding: 0 2rem;
+
+        }
+    }
+
+    .navbarLink {
+
+        .navLink {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headerBg {
+
+        .headerContainer {
+            padding: 0 .5rem;
+
+            .headerDisplay {
+
+                .headBar {
+                    width: 100vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .toggleMenu {
+                        display: flex;
+                        font-size: 2rem;
+                    }
+                }
+
+                .desktopNav {
+                    display: none;
+                }
+
+                .mobileNav {
+                    display: flex;
+                    position: absolute;
+                    top: 5rem;
+                    width: 100vw;
+                    height: 100vh;
+                    background-color: black;
+                    transition-duration: 500ms;
+                }
+
+                .stickyNav {
+                    top: 4rem;
+                }
+
+                .toggleOn {
+                    left: 0;
+                }
+
+                .toggleOff {
+                    left: -100%;
+                }
+            }
+        }
+    }
+
+    .navbarLink {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2rem 0;
+        width: 100vw;
+
+        .navLink {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+    }
+}
