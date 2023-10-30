@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "../../styles/header.scss";
 import Navbar from "./Navbar";
 import { MdClose, MdMenu } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -23,12 +24,19 @@ const Header = () => {
         setSticky(stickyClass);
     };
 
+    const goToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
     return (
         <nav className={`headerBg ${sticky}`}>
             <div className="headerContainer">
                 <div className="headerDisplay">
                     <div className="headBar">
-                        <h1>TechSoft</h1>
+                        <Link to="/" onClick={goToTop}><h1>TechSoft</h1></Link>
                         <div className="toggleMenu" onClick={() => setOpen(!open)}>
                             {open ? <MdClose /> : <MdMenu />}
                         </div>

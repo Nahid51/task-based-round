@@ -1,10 +1,5 @@
 export const navItems = [
     {
-        id: 1,
-        title: "Home",
-        path: "/"
-    },
-    {
         id: 2,
         title: "About Us",
         path: "/#about"
@@ -38,5 +33,10 @@ export const navItems = [
         id: 8,
         title: "Clients",
         path: "/#clients"
+    },
+    {
+        id: 9,
+        title: "Contact",
+        path: "/#contact"
     }
 ];

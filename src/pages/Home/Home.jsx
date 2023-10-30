@@ -8,6 +8,7 @@ import Testimonials from '../../components/Testimonials';
 import Question from '../../components/Question';
 import MeetTheTeam from '../../components/MeetTheTeam';
 import Clients from '../../components/Clients';
+import Footer from '../../components/Footer';
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
             <Question />
             <MeetTheTeam />
             <Clients />
+            <Footer />
         </div>
     )
 }

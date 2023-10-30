@@ -2,7 +2,7 @@
 
 const MeetTheTeam = () => {
     return (
-        <div>MeetTheTeam</div>
+        <div id="team" style={{ height: "100vh" }}>MeetTheTeam</div>
     )
 }
 

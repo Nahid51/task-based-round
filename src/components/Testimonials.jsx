@@ -1,7 +1,7 @@
 
 const Testimonials = () => {
     return (
-        <div>Testimonials</div>
+        <div id="testimonials" style={{ height: "100vh" }}>Testimonials</div>
     )
 }
 

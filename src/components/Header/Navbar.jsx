@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { navItems } from "../../assets/navItems";
 import "../../styles/header.scss";
 
@@ -8,15 +8,13 @@ const Navbar = ({ setOpen }) => {
             {
                 navItems.map((link) => (
                     <div key={link.id}>
-                        <Link
+                        <HashLink
                             to={link.path}
                             className="navLink"
-                            onClick={() => {
-                                link.path && setOpen(false)
-                            }}
+                            onClick={() => setOpen && setOpen(false)}
                         >
                             {link.title}
-                        </Link>
+                        </HashLink>
                     </div>
                 ))
             }

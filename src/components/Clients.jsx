@@ -2,7 +2,7 @@
 
 const Clients = () => {
     return (
-        <div>Clients</div>
+        <div id="clients" style={{ height: "100vh" }}>Clients</div>
     )
 };
 
