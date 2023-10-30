@@ -36,7 +36,7 @@ const Header = () => {
             <div className="headerContainer">
                 <div className="headerDisplay">
                     <div className="headBar">
-                        <Link to="/" onClick={goToTop}><h1>TechSoft</h1></Link>
+                        <Link to="/" onClick={goToTop}><h1>SoftTech</h1></Link>
                         <div className="toggleMenu" onClick={() => setOpen(!open)}>
                             {open ? <MdClose /> : <MdMenu />}
                         </div>

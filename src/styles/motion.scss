@@ -1,0 +1,19 @@
+.motion1 {
+    transform: translateX(0px);
+    transition: all 1s ease-in-out;
+}
+
+.motion2 {
+    transform: translateX(-5rem);
+    transition: all 500ms ease-in-out;
+}
+
+.motion3 {
+    transform: translateX(0px);
+    transition: all 1s ease-in-out;
+}
+
+.motion4 {
+    transform: translateX(5rem);
+    transition: all 500ms ease-in-out;
+}
