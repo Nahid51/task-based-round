@@ -1,5 +1,6 @@
 .questionInMindBg {
     background: linear-gradient(to left top, #6769F8, #6f4e94) !important;
+    margin-top: 10rem;
 
     .questionSection {
 
@@ -40,6 +41,7 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1080px) {
     .questionInMindBg {
+        margin-top: 5rem;
 
         .questionSection {
 
@@ -54,6 +56,7 @@
 
 @media only screen and (max-width: 768px) {
     .questionInMindBg {
+        margin-top: 5rem;
 
         .questionSection {
 
