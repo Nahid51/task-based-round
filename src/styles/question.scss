@@ -1,0 +1,74 @@
+.questionInMindBg {
+    background: linear-gradient(to left top, #6769F8, #6f4e94) !important;
+
+    .questionSection {
+
+        .questionAlignment {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 5rem 20rem;
+        }
+
+    }
+
+    .questionButton {
+        // px-7 py-4 bg-white rounded-lg flex items-center gap-1 text-[] font-semibold hover:bg-transparent border-0 hover:border-2 hover:border-white hover:text-white
+        padding: 1rem 1.5rem;
+        background-color: white;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        color: #551A9A;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition-duration: 300ms;
+
+        &:hover {
+            background: transparent;
+            border: 1px solid #551A9A;
+            color: #F0F8FF;
+            border-color: #F0F8FF;
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+    .questionInMindBg {
+
+        .questionSection {
+
+            .questionAlignment {
+                padding: 5rem;
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .questionInMindBg {
+
+        .questionSection {
+
+            .questionAlignment {
+                flex-direction: column;
+                text-align: center;
+
+                padding: 5rem 2rem;
+
+                p {
+                    margin: 2rem 0 1rem;
+                }
+            }
+
+        }
+
+    }
+}
