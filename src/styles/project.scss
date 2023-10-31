@@ -1,7 +1,135 @@
 .projectBg {
-    height: 95vh;
-
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10rem 20rem;
+
+    .projectsHeader {
+        text-align: center;
+
+        h4 {
+            color: #551A9A;
+            font-size: 18px;
+        }
+
+        h1 {
+            margin: .5rem 0;
+        }
+    }
+}
+
+.projectsAlign {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.projectButton {
+    padding: .5rem 1rem;
+    transition-duration: 300ms;
+    border-radius: .5rem;
+    font-weight: 600;
+
+    &:hover {
+        background-color: #5355DF;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+    .projectBg {
+        padding: 5rem;
+    }
+
+    .projectsAlign {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .projectBg {
+        padding: 10rem 1rem;
+
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    .projectsAlign {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(0, 1);
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: scale(1);
+}
+
+.hovereffect .imgResponsive {
+    display: block;
+    position: relative;
+    transition: all 0.35s;
+}
+
+.hovereffect:hover .imgResponsive {
+    filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background-color: transparent;
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(0, -100%, 0);
+}
+
+.hovereffect a,
+.hovereffect p {
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(0, 100%, 0);
+}
+
+.hovereffect:hover a,
+.hovereffect:hover p,
+.hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: translate3d(0, 0, 0);
 }

@@ -19,8 +19,6 @@ const Products = () => {
     if (isLoading) return <p>Loading...</p>
     if (!data) return <p>No profile data</p>
 
-    console.log(data)
-
     return (
         <div id="products" className="productBg">
             <div>
@@ -34,7 +32,7 @@ const Products = () => {
                         data.map((item) => (
                             <MotionLeft key={item.id} >
                                 <div className="hovereffect">
-                                    <img src={item.photo} alt="Project Photo" width={400} height={300} />
+                                    <img src={item.photo} alt="Product Photo" width={400} height={300} />
                                     <div className="overlay">
                                         <h2>{item.title}</h2>
                                         <p>
