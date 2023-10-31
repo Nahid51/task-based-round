@@ -12,6 +12,10 @@
         gap: 2rem;
         overflow-x: hidden !important;
 
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
         .aboutImage {
             text-align: center;
 

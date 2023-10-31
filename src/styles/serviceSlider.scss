@@ -1,0 +1,75 @@
+.serviceSlider {
+    padding: 5rem;
+    width: 100vw;
+}
+
+.prevArrow {
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.nextArrow {
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.sliderAlignment {
+    padding: 5rem;
+
+    i {
+        background-color: #13C4A1;
+        color: white;
+        padding: 1rem;
+        border-radius: 3rem;
+        font-size: 2rem;
+    }
+
+    h2 {
+        margin: 1rem 0;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .sliderButton {
+        background-color: #13C4A1;
+        color: white;
+        font-weight: bold;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+    .serviceSlider {
+        padding: 2rem;
+    }
+
+    .sliderAlignment {
+        padding: 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .serviceSlider {
+        padding: 0;
+    }
+
+    .sliderAlignment {
+        padding: 3rem;
+    }
+}
