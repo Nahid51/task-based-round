@@ -1,7 +1,91 @@
 .testimonialBg {
     height: 95vh;
+    padding: 5rem 10rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .testimonialsHeader {
+        text-align: center;
+    }
+
 }
+
+.testimonialSlider {
+    width: 98vw;
+    padding: 2rem 10rem;
+
+    .testimonialAlignment {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+
+        .testimonialImage {
+
+            position: relative;
+            width: 100%;
+            margin: auto;
+
+            img {
+                width: 80%;
+                margin: auto;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+    .testimonialBg {
+        height: 95vh;
+
+    }
+
+    .testimonialSlider {
+        padding: 2rem 5rem;
+
+        .testimonialAlignment {
+            grid-template-columns: repeat(1, 1fr);
+
+            .testimonialImage {
+
+                width: 85%;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .testimonialBg {
+        height: 100%;
+
+    }
+
+    .testimonialSlider {
+        width: 100vw;
+        padding: 1rem;
+
+        .testimonialAlignment {
+            grid-template-columns: repeat(1, 1fr);
+
+            .testimonialImage {
+
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+}
+
+// .md:text-5xl text-2xl absolute md:-left-10 left-0 bottom-1/2 cursor-pointer

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 67,
+        "customerName": "Lida Silva",
+        "photo": "/images/testimonials-img1.jpg",
+        "position": "CEO and Founder",
+        "desc": "Molecular middle lonely happen base nobody express another call using wool plant quite money yes neck watch under among beat official cowboy cost master.",
+        "rating": "5"
+    },
+    {
+        "id": 33,
+        "customerName": "Fannie Shaw",
+        "photo": "/images/testimonials-img2.jpg",
+        "position": "Chaiman",
+        "desc": "Afternoon explain science slipped parallel jet captain wave did cat price neighbor bit inch lack motion just noun angry beginning species earlier shall farm.",
+        "rating": "5"
+    },
+    {
+        "id": 74,
+        "customerName": "Maurice Harrison",
+        "photo": "/images/testimonials-img1.jpg",
+        "position": "Director",
+        "desc": "Chair see yard afraid wave differ bell storm wire felt season recent type night room degree respect back soldier hardly independent later there fat.",
+        "rating": "4"
+    }
+]
