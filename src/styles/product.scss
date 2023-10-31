@@ -1,7 +1,141 @@
 .productBg {
-    height: 95vh;
-
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 20rem;
+
+    .productHeader {
+        text-align: center;
+
+        h4 {
+            color: #551A9A;
+            font-size: 18px;
+        }
+
+        h1 {
+            margin: .5rem 0;
+        }
+    }
+
+}
+
+.productsAlign {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.productButton {
+    padding: .5rem 1rem;
+    transition-duration: 300ms;
+    border-radius: .5rem;
+    font-weight: 600;
+
+    &:hover {
+        background-color: #5355DF;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+    .productBg {
+        padding: 5rem;
+    }
+
+    .productsAlign {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .productBg {
+        padding: 10rem 1rem;
+    }
+
+    .productsAlign {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #42b078;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 50px 20px;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 20px);
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(-10px, 0, 0);
+    backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+    opacity: 0.4;
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #5355DF;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    overflow: hidden;
+    padding: 0.5em 0;
+}
+
+.hovereffect h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    transition: transform 0.35s;
+    transform: translate3d(-100%, 0, 0);
+}
+
+.hovereffect:hover h2:after {
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect a,
+.hovereffect p {
+    color: #FFF;
+    opacity: 0;
+    margin-top: 10px;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(100%, 0, 0);
+}
+
+.hovereffect:hover a,
+.hovereffect:hover p {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }

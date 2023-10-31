@@ -1,0 +1,56 @@
+[
+    {
+        "id": 13,
+        "title": "Teaching Soft",
+        "photo": "/images/webDev.jpg",
+        "link": "#"
+    },
+    {
+        "id": 16,
+        "title": "Accounting software",
+        "photo": "/images/webDev.jpg",
+        "link": "#"
+    },
+    {
+        "id": 17,
+        "title": "Custom Software",
+        "photo": "/images/webDev.jpg",
+        "link": "#"
+    },
+    {
+        "id": 57,
+        "title": "Insurance management software",
+        "photo": "/images/webDev.jpg",
+        "link": "#"
+    },
+    {
+        "id": 80,
+        "title": "Travel agency management software",
+        "photo": "/images/webDev.jpg",
+        "link": "#"
+    },
+    {
+        "id": 89,
+        "title": "Pharmacy Management Software",
+        "photo": "/images/webDev.jpg",
+        "link": "#"
+    },
+    {
+        "id": 45,
+        "title": "School management software",
+        "photo": "/images/webDev.jpg",
+        "link": "#"
+    },
+    {
+        "id": 96,
+        "title": "Hospital management software",
+        "photo": "/images/webDev.jpg",
+        "link": "#"
+    },
+    {
+        "id": 20,
+        "title": "Hotel & Restuarent System",
+        "photo": "/images/webDev.jpg",
+        "link": "#"
+    }
+]
