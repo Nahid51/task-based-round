@@ -9,102 +9,103 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+    }
 
-        .footterAddress {
-            width: 90%;
+    .footterAddress {
+        width: 90%;
+    }
+
+
+    .footerText {
+        font-weight: 600;
+
+        p {
+            margin: .5rem 0;
         }
 
+        h4 {
+            font-size: 24px;
+            margin-bottom: 1rem;
+            color: #551A8B;
+        }
 
-        .footerText {
-            font-weight: 600;
+        .linkAlignment {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            list-style-type: none;
 
-            p {
-                margin: .5rem 0;
-            }
-
-            h4 {
-                font-size: 24px;
-                margin-bottom: 1rem;
-            }
-
-            .linkAlignment {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                list-style-type: none;
-
-                li {
-                    transition-duration: 300ms;
-                    transition-timing-function: ease-in-out;
-                    margin: .3rem 0;
-
-                    &:hover {
-                        color: #5AA0F2;
-                        transform: translateX(10px);
-                    }
-                }
-
-                li>a {
-                    text-decoration: none;
-                    color: #000;
-                }
-            }
-
-            h6 {
-                margin-top: 1rem;
-                font-size: 16px;
-            }
-
-            nav {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-            }
-
-            .footerInput {
-
-                input:focus {
-                    outline: none;
-                }
-            }
-
-            .faFacebook {
-                cursor: pointer;
+            li {
                 transition-duration: 300ms;
+                transition-timing-function: ease-in-out;
+                margin: .3rem 0;
 
                 &:hover {
-                    color: #1877F2;
-                    transform: scale(1.25);
+                    color: #551A8B;
+                    transform: translateX(10px);
                 }
             }
 
-            .mdEmail {
-                cursor: pointer;
-                transition-duration: 300ms;
-
-                &:hover {
-                    color: #E54033;
-                    transform: scale(1.25);
-                }
+            li>a {
+                text-decoration: none;
+                color: #000;
             }
+        }
 
-            .faYoutube {
-                cursor: pointer;
-                transition-duration: 300ms;
+        h6 {
+            margin-top: 1rem;
+            font-size: 16px;
+        }
 
-                &:hover {
-                    color: #FF0000;
-                    transform: scale(1.25);
-                }
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footerInput {
+
+            input:focus {
+                outline: none;
             }
+        }
 
-            .faTwitter {
-                cursor: pointer;
-                transition-duration: 300ms;
+        .faFacebook {
+            cursor: pointer;
+            transition-duration: 300ms;
 
-                &:hover {
-                    color: #27A3E0;
-                    transform: scale(1.25);
-                }
+            &:hover {
+                color: #1877F2;
+                transform: scale(1.25);
+            }
+        }
+
+        .mdEmail {
+            cursor: pointer;
+            transition-duration: 300ms;
+
+            &:hover {
+                color: #E54033;
+                transform: scale(1.25);
+            }
+        }
+
+        .faYoutube {
+            cursor: pointer;
+            transition-duration: 300ms;
+
+            &:hover {
+                color: #FF0000;
+                transform: scale(1.25);
+            }
+        }
+
+        .faTwitter {
+            cursor: pointer;
+            transition-duration: 300ms;
+
+            &:hover {
+                color: #27A3E0;
+                transform: scale(1.25);
             }
         }
     }

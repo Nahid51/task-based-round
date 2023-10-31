@@ -11,7 +11,7 @@ const MotionRight = ({ children }) => {
             const entry = entries[0];
             setVisible(entry.isIntersecting);
         }, {
-            threshold: .5
+            threshold: .1
         })
         observer.observe(myRef.current)
     }, []);

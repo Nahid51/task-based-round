@@ -4,7 +4,6 @@ import { MdLocationPin, MdCall, MdEmail } from "react-icons/md";
 import { FaGlobe, FaCalendarAlt, FaYoutube, FaTwitter, FaFacebookSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import MotionLeft from "./MotionLeft";
-import MotionRight from "./MotionRight";
 
 const Footer = () => {
     const {
@@ -43,32 +42,30 @@ const Footer = () => {
                             <li><Link href="#">Terms & Condition</Link></li>
                         </ul>
                     </div>
-                    <MotionRight>
-                        <div className="footerText">
-                            <h4>Subscribe</h4>
-                            <form onSubmit={handleSubmit(onSubmit)} className="footerInput">
-                                <input placeholder="Enter your email" {...register("email", { required: true, maxLength: 20 })} style={{ padding: "12px", border: "none", borderRadius: "5px" }} />
-                                <button type="submit" style={{ backgroundColor: "blue", padding: "12px", border: "none", borderRadius: "5px", color: "white" }} >Subscribe</button>
-                                {errors.email && <p style={{ color: "red", fontWeight: "300", fontSize: "14px" }}>This field is required</p>}
-                            </form>
+                    <div className="footerText">
+                        <h4>Subscribe</h4>
+                        <form onSubmit={handleSubmit(onSubmit)} className="footerInput">
+                            <input placeholder="Enter your email" {...register("email", { required: true, maxLength: 20 })} style={{ padding: "12px", border: "none", borderRadius: "5px" }} />
+                            <button type="submit" style={{ backgroundColor: "blue", padding: "12px", border: "none", borderRadius: "5px", color: "white" }} >Subscribe</button>
+                            {errors.email && <p style={{ color: "red", fontWeight: "300", fontSize: "14px" }}>This field is required</p>}
+                        </form>
 
-                            <h6>Follow Us</h6>
-                            <nav>
-                                <Link to="#">
-                                    <FaFacebookSquare size={24} className="faFacebook" />
-                                </Link>
-                                <Link to="#">
-                                    <MdEmail size={28} className="mdEmail" />
-                                </Link>
-                                <Link to="#">
-                                    <FaYoutube size={28} className="faYoutube" />
-                                </Link>
-                                <Link to="#">
-                                    <FaTwitter size={26} className="faTwitter" />
-                                </Link>
-                            </nav>
-                        </div>
-                    </MotionRight>
+                        <h6>Follow Us</h6>
+                        <nav>
+                            <Link to="#">
+                                <FaFacebookSquare size={24} className="faFacebook" />
+                            </Link>
+                            <Link to="#">
+                                <MdEmail size={28} className="mdEmail" />
+                            </Link>
+                            <Link to="#">
+                                <FaYoutube size={28} className="faYoutube" />
+                            </Link>
+                            <Link to="#">
+                                <FaTwitter size={26} className="faTwitter" />
+                            </Link>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </main>

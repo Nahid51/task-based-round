@@ -10,8 +10,17 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden !important;
 }
 
-.color {
+.color1 {
+  color: #F0F8FF;
+}
+
+.color2 {
   color: #551A9A;
+}
+
+.color3 {
+  color: #6769F8;
 }

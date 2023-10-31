@@ -1,5 +1,5 @@
 .heroBg {
-    height: 95vh;
+    height: 100vh;
 
     display: flex;
     align-items: center;
@@ -75,7 +75,8 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1080px) {
     .heroBg {
-        margin: 1rem 5rem 0;
+        margin: 1rem 1rem 0;
+        height: 100%;
 
         .heroContainer {
             display: grid;
