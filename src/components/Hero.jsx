@@ -1,5 +1,5 @@
 import "../styles/hero.scss";
-import heroImage from "../../public/images/hero_banner_image_7.webp";
+import heroImage from "/images/hero_banner_image_7.webp";
 import MotionLeft from "./MotionLeft";
 
 const Hero = () => {

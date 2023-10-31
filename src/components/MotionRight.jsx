@@ -5,9 +5,7 @@ const MotionRight = ({ children }) => {
     const myRef = useRef();
     const [visible, setVisible] = useState();
 
-    console.log(visible)
-    console.log(children)
-
+    // implement intersection observer for grab specific section or component on screen
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];

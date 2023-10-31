@@ -59,59 +59,68 @@
     }
 }
 
-// @keyframes movebtn {
-//     0% {
-//         transform: translateY(0px);
-//     }
+@keyframes movebtn {
+    0% {
+        transform: translateY(0px);
+    }
 
-//     50% {
-//         transform: translateY(20px);
-//     }
+    50% {
+        transform: translateY(20px);
+    }
 
-//     100% {
-//         transform: translateY(0px);
-//     }
-// }
+    100% {
+        transform: translateY(0px);
+    }
+}
 
-// @media only screen and (min-width: 769px) and (max-width: 1080px) {
-//     .heroBg {
-//         margin: 1rem 5rem 0;
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+    .heroBg {
+        margin: 1rem 5rem 0;
 
-//         .heroContainer {
-//             display: grid;
-//             grid-template-columns: repeat(1, 1fr);
-//             align-items: center;
-//             justify-content: space-between;
+        .heroContainer {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            justify-content: space-between;
 
-//             .heroImage {
-//                 text-align: center;
+            .heroImage {
+                text-align: center;
 
-//                 img {
-//                     width: 80%;
-//                 }
-//             }
-//         }
-//     }
-// }
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
 
-// @media only screen and (max-width: 768px) {
-//     .heroBg {
-//         margin: 1rem 1rem 0;
-//         height: 100%;
+@media only screen and (max-width: 768px) {
+    .heroBg {
+        margin: 1rem 1rem 0;
+        height: 100%;
 
-//         .heroContainer {
-//             display: grid;
-//             grid-template-columns: repeat(1, 1fr);
-//             align-items: center;
-//             justify-content: space-between;
+        .heroContainer {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            justify-content: space-between;
 
-//             .heroImage {
-//                 text-align: center;
+            .heroText {
+                margin: 0 1rem;
 
-//                 img {
-//                     width: 70%;
-//                 }
-//             }
-//         }
-//     }
-// }
+                h3 {
+                    font-size: 2rem;
+                    margin: 1rem 0;
+                }
+            }
+
+            .heroImage {
+                text-align: center;
+
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
