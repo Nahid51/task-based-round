@@ -1,0 +1,51 @@
+[
+    {
+        "id": 196,
+        "photo": "/images/team/circle-team1.jpg",
+        "name": "Darrell Owen",
+        "social": {
+            "facebook": "https://www.facebook.com/#",
+            "whatsapp": "https://web.whatsapp.com/#",
+            "linkedin": "https://www.linkedin.com/#",
+            "twitter": "https://twitter.com/#",
+            "instagram": "https://www.instagram.com/#"
+        },
+        "position": "CEO & Founder"
+    },
+    {
+        "id": 949,
+        "photo": "/images/team/circle-team2.jpg",
+        "name": "Philip Maldonado",
+        "social": {
+            "facebook": "https://www.facebook.com/#",
+            "linkedin": "https://www.linkedin.com/#",
+            "twitter": "https://twitter.com/#",
+            "instagram": "https://www.instagram.com/#"
+        },
+        "position": "SEO Specialist"
+    },
+    {
+        "id": 618,
+        "photo": "/images/team/circle-team3.jpg",
+        "name": "Dollie Mathis",
+        "social": {
+            "facebook": "https://www.facebook.com/#",
+            "linkedin": "https://www.linkedin.com/#",
+            "twitter": "https://twitter.com/#",
+            "instagram": "https://www.instagram.com/#"
+        },
+        "position": "Backend Specialist"
+    },
+    {
+        "id": 519,
+        "photo": "/images/team/circle-team4.jpg",
+        "name": "Chris Walters",
+        "social": {
+            "facebook": "https://www.facebook.com/#",
+            "linkedin": "https://www.linkedin.com/#",
+            "twitter": "https://twitter.com/#",
+            "instagram": "https://www.instagram.com/#"
+        },
+        "position": "Reactjs Specialist"
+    }
+]

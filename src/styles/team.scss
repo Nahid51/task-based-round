@@ -4,4 +4,115 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .teamHeader {
+        text-align: center;
+
+        h4 {
+            color: #551A9A;
+            font-size: 18px;
+        }
+
+        h1 {
+            width: 70%;
+            margin: auto;
+        }
+    }
+
+    .teamAlignment {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        align-items: center;
+        margin: 2rem 0;
+
+        .teamDetails {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                color: #551A9A;
+                margin: 1rem 0 .5rem;
+            }
+
+            nav {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .teamSocialIcon {
+                margin-top: .5rem;
+                color: black;
+                background-color: gray;
+                padding: .5rem;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+    .teamBg {
+        height: 95vh;
+
+        .teamHeader {
+            text-align: center;
+
+            h4 {
+                color: #551A9A;
+                font-size: 18px;
+            }
+
+            h1 {
+                width: 70%;
+                margin: auto;
+            }
+        }
+
+        .teamAlignment {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+
+            .teamImage {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .teamBg {
+        height: 100%;
+        padding: 5rem 1rem;
+
+        .teamHeader {
+            text-align: center;
+
+            h4 {
+                color: #551A9A;
+                font-size: 16px;
+            }
+
+            h1 {
+                width: 100%;
+                margin: auto;
+                font-size: 24px;
+            }
+        }
+
+        .teamAlignment {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+
+            .teamImage {
+                text-align: center;
+            }
+        }
+    }
 }
