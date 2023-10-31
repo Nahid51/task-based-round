@@ -1,7 +1,59 @@
 .clientBg {
     height: 95vh;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #F6F3F3;
+
+    .clientHeader {
+        text-align: center;
+
+        h4 {
+            color: #551A9A;
+        }
+    }
+
+    .clientDetails {
+        overflow: hidden !important;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+        margin: 4rem 0;
+
+        .clientImage {
+            text-align: center;
+
+            img {
+                overflow: hidden !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+    .clientBg {
+        height: 100%;
+        padding: 7rem 0;
+
+        .clientDetails {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .clientBg {
+        height: 100%;
+        padding: 5rem 0;
+
+        .clientDetails {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+    }
 }
